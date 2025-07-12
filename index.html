@@ -1,45 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boots Hub</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boots Hub | Work, Hiking & Casual Boots</title>
+  <meta name="description" content="Boots Hub is your go-to source for high-quality work boots, hiking boots, and stylish casual boots. Discover the perfect pair today.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .hero {
+      background: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #ff6600;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #e65c00;
+    }
+    .collections {
+      padding: 60px 20px;
+      background: #f0f0f0;
+      text-align: center;
+    }
+    .collections h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+    .collection-list {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .collection-item {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+    }
+    .collection-item:hover {
+      transform: translateY(-5px);
+    }
+    .collection-item h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .collection-item p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .collection-item a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .about {
+      background: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #555;
+    }
+    footer {
+      background: #222;
+      color: #ddd;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Boots Hub</h1>
-        <p>Your one-stop site for all things boots!</p>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Discover Our Collections</h2>
-                <p>Explore a wide variety of boots that suit your style and needs.</p>
-                <a href="#collections" class="cta-button">View Collections</a>
-            </div>
-        </section>
-        <section id="collections" class="collections">
-            <h2>Our Collections</h2>
-            <div class="collection-list">
-                <div class="collection-item">
-                    <h3>Hiking Boots</h3>
-                    <p>Durable and comfortable boots for your adventurous trails.</p>
-                </div>
-                <div class="collection-item">
-                   <a href="https://theworkboots.us/"> <h3>Work Boots</h3>
-                    <p>Strong and reliable boots for your demanding work environment.</p></a>
-                </div>
-                <div class="collection-item">
-                    <h3>Casual Boots</h3>
-                    <p>Stylish and comfortable boots for everyday wear.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Boots Hub</p>
-    </footer>
+
+  <header>
+    <h1>Welcome to Boots Hub</h1>
+    <p>Your trusted source for quality work, hiking, and casual boots.</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Find the Right Boots for Every Step</h2>
+      <p>From the jobsite to the trails or weekend outings, we help you walk smarter and safer.</p>
+      <a href="#collections" class="cta-button">Explore Collections</a>
+    </section>
+
+    <section id="collections" class="collections">
+      <h2>Our Collections</h2>
+      <div class="collection-list">
+        <div class="collection-item">
+          <h3>Hiking Boots</h3>
+          <p>Durable, weather-ready boots built for mountain trails and weekend adventures.</p>
+        </div>
+        <div class="collection-item">
+          <a href="https://theworkboots.us/" target="_blank">
+            <h3>Work Boots</h3>
+            <p>Reliable, tough-as-nails boots designed to protect you on and off the job.</p>
+          </a>
+        </div>
+        <div class="collection-item">
+          <h3>Casual Boots</h3>
+          <p>Comfort meets style — boots that go with your everyday look effortlessly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Why Boots Hub?</h2>
+      <p>We’re passionate about boots. At Boots Hub, our goal is to guide you to the best choices whether you're a construction worker, an outdoor explorer, or someone who just loves great footwear. We research, review, and curate the most dependable boots on the market, so you can shop with confidence.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Boots Hub. Built with ❤️ by <a href="https://theworkboots.us/" target="_blank">The Work Boots</a>.</p>
+  </footer>
+
 </body>
 </html>
